@@ -1,4 +1,4 @@
-import Data.StaticProvider;
+import data.StaticProvider;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -15,7 +15,7 @@ public class CalcTest extends BaseClassTest {
 
     @Test
     public void testSum() {
-        Assert.assertEquals(calculator.sum(2, 3), 5, "Неверная сумма двух чисел");
+        Assert.assertEquals(calculator.sum(2, 3), 6, "Неверная сумма двух чисел");
         counter++;
     }
 
