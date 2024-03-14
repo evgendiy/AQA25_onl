@@ -3,7 +3,6 @@ import org.testng.annotations.*;
 public class BaseTest {
 
     protected static int counter = 0;
-    protected Calculator calculator = new Calculator();
 
     @BeforeSuite
     public void beforeSuit() {
