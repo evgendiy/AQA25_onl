@@ -1,6 +1,5 @@
 import org.testng.annotations.*;
 
-@Listeners(Listener.class)
 public class BaseTest {
 
     protected static int counter = 0;
