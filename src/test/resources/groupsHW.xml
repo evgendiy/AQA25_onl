@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Homework Groups suite">
+    <test name="Smoke">
+        <groups>
+            <define name="IntegerTest1">
+                <include name="smoke"/>
+            </define>
+            <define name="IntegerTest2">
+                <include name="regression"/>
+            </define>
+            <run>
+                <include name="IntegerTest1"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="IntegerDivTest"/>
+        </classes>
+    </test>
+</suite>

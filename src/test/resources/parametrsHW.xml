@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Homework suite">
+    <parameter name="dividend" value="10"/>
+    <parameter name="divisor" value="2"/>
+    <parameter name="expResult" value="5"/>
+    <test name="SmokeInt">
+        <classes>
+            <class name="IntegerDivTest">
+                <methods>
+                    <include name="testIntegerParameters"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
