@@ -1,5 +1,6 @@
 import Data.Provider;
 import org.testng.Assert;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -12,7 +13,7 @@ public class IntegerDivTest extends BaseTest {
 
     @Parameters({"dividend", "divisor", "expResult"})
     @Test()
-    public void testIntegerParameters(int dividend, int divisor, int expResult) {
+    public void testIntegerParameters(@Optional("4") int dividend, @Optional("2") int divisor, @Optional("2") int expResult) {
         Assert.assertEquals(calculator.div(dividend, divisor), expResult, "Wrong result");
     }
 

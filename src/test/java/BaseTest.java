@@ -1,4 +1,5 @@
 import org.testng.annotations.BeforeGroups;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Listeners;
 
@@ -13,4 +14,12 @@ public class BaseTest {
         System.out.print("**************calculator is initialized**************");
     }
 
+    @BeforeGroups(groups = {"smoke", "regression"})
+    public void beforeGroups() {
+        calculator = new Calculator();
+    }
+    @BeforeMethod
+    public void beforeMethod() {
+        calculator = new Calculator();
+    }
 }

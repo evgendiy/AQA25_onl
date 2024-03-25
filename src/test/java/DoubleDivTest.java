@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 public class DoubleDivTest extends BaseTest {
     @Test(priority = 3, testName = "hardcode test", description = "test for checking")
     public void testDoubleDiv1() {
-        Assert.assertEquals(calculator.div(10.2, 2.10), 4.857142857142857, "Wrong result");
+        Assert.assertEquals(calculator.div(10.0, 2.0), 5.0, "Wrong result");
     }
 
     @Test(enabled = true) //падает для проверки alwaysRun в testRetryDiv

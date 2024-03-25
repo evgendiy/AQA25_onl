@@ -11,10 +11,10 @@
             </class>
         </classes>
     </test>
-<!--    <test name="SmokeInteger">-->
-<!--        <classes>-->
+    <test name="SmokeInteger">
+        <classes>
 
-<!--            <class name="IntegerDivTest"/>-->
-<!--        </classes>-->
-<!--    </test>-->
+            <class name="IntegerDivTest"/>
+        </classes>
+    </test>
 </suite>
